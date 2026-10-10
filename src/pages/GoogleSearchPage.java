@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Objects;
 import java.util.Random;
 
 public class GoogleSearchPage {
@@ -60,7 +61,7 @@ public class GoogleSearchPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         try {
             wait.until(ExpectedConditions.presenceOfElementLocated(searchResults));
-            return driver.getPageSource().contains(expectedText);
+            return Objects.requireNonNull(driver.getPageSource()).contains(expectedText);
         } catch (Exception e) {
             return false;
         }
