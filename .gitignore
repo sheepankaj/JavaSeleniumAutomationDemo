@@ -1,0 +1,47 @@
+### IntelliJ IDEA ###
+.idea/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Maven ###
+target/
+
+### Surefire test reports ###
+target/surefire-reports/
+
+### Build artifacts ###
+jar_out.txt
+
+### Qodana ###
+qodana.yaml
+.github/workflows/qodana_code_quality.yml
+
+### Manually downloaded JARs (Maven manages dependencies) ###
+seleniumdriver/
